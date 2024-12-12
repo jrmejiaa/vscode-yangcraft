@@ -1,0 +1,32 @@
+{
+  "name": "vscode-yangcraft",
+  "displayName": "vscode-yangcraft",
+  "description": "Yet Another Extension to work with YANG",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages",
+    "Snippets"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "yang",
+      "aliases": ["yang", "yang"],
+      "extensions": ["yang"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "yang",
+      "scopeName": "source.yang",
+      "path": "./syntaxes/yang.tmLanguage.yaml"
+    }],
+    "snippets": [
+      {
+        "language": "yang",
+        "path": "./snippets/yang.code-snippets"
+      }
+    ]
+  }
+}
