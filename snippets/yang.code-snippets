@@ -1,3 +1,187 @@
 {
-    
+    "module skeleton": {
+        "prefix": "module",
+        "body": [
+            "module $1 {",
+            "\tyang-version ${2:1.1};",
+            "\tnamespace \"$3\";",
+            "\tprefix $4;",
+            "",
+            "\t/* import modules */",
+            "",
+            "\t$0",
+            "",
+            "\torganization",
+            "\t\t\"$5\";",
+            "\tcontact",
+            "\t\t\"$6\";",
+            "\tdescription",
+            "\t\t\"$7\";",
+            "\trevision $8 {",
+            "\t\tdescription",
+            "\t\t\t\"${9:Initial revision};\"",
+            "\t\treference",
+            "\t\t\t\"${10:XXXX};\"",
+            "\t}",
+            "}",
+        ],
+        "description": "Creates the basic module skeleton"
+    },
+    "import skeleton": {
+        "prefix": "import",
+        "body": [
+            "import $1 {",
+            "\tprefix $2;",
+            "\treference",
+            "\t\t\"$3\";",
+            "}$0",
+        ],
+        "description": "Import a module into the current file"
+    },
+    "typedef skeleton": {
+        "prefix": "typedef",
+        "body": [
+            "typedef $1 {",
+            "\t$0",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "}",
+        ],
+        "description": "typedef skeleton into the current file"
+    },
+    "feature skeleton": {
+        "prefix": "feature",
+        "body": [
+            "feature $1 {",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "\treference",
+            "\t\t\"$3\";",
+            "}$0",
+        ],
+        "description": "feature skeleton into the current file"
+    },
+    "identity skeleton": {
+        "prefix": "identity",
+        "body": [
+            "identity $1 {",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "}$0",
+        ],
+        "description": "identity skeleton into the current file"
+    },
+    "grouping skeleton": {
+        "prefix": "grouping",
+        "body": [
+            "grouping $1 {",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "\t$0",
+            "\treference",
+            "\t\t\"$3\";",
+            "}",
+        ],
+        "description": "grouping skeleton into the current file"
+    },
+    "container skeleton": {
+        "prefix": "container",
+        "body": [
+            "container $1 {",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "\t$0",
+            "}",
+        ],
+        "description": "container skeleton into the current file"
+    },
+    "when-container skeleton": {
+        "prefix": "when-container",
+        "body": [
+            "container $1 {",
+            "\twhen '$2 = boolean($3)' {",
+            "\t\tdescription",
+            "\t\t\t\"$4\";",
+            "\t}",
+            "\tdescription",
+            "\t\t\"$5\";",
+            "\t$0",
+            "}",
+        ],
+        "description": "when-container skeleton into the current file"
+    },
+    "rpc skeleton": {
+        "prefix": "rpc",
+        "body": [
+            "rpc $1 {",
+            "\tdescription",
+            "\t\t\"$2\";",
+            "\t$0",
+            "}",
+        ],
+        "description": "rpc skeleton into the current file"
+    },
+    "leaf-list skeleton": {
+        "prefix": "leaf-list",
+        "body": [
+            "leaf-list $1 {",
+            "\ttype $2;",
+            "\tdescription \"$3\";",
+            "}$0",
+        ],
+        "description": "leaf-list skeleton into the current file"
+    },
+    "list skeleton": {
+        "prefix": "list",
+        "body": [
+            "list $1 {",
+            "\tkey \"$2\";",
+            "\tdefault \"$3\";",
+            "\t$0",
+            "}",
+        ],
+        "description": "list skeleton into the current file"
+    },
+    "leaf skeleton": {
+        "prefix": "leaf",
+        "body": [
+            "leaf $1 {",
+            "\ttype $2",
+            "\tdefault \"$3\";",
+            "\tdescription",
+            "\t\t\"$4\";",
+            "\treference",
+            "\t\t\"$5\";",
+            "}$0",
+        ],
+        "description": "leaf skeleton into the current file"
+    },
+    "presence skeleton": {
+        "prefix": "presence",
+        "body": [
+            "presence \"$0\";",
+        ],
+        "description": "presence skeleton into the current file"
+    },
+    "config skeleton": {
+        "prefix": "config",
+        "body": [
+            "config ${0:false};",
+        ],
+        "description": "config skeleton into the current file"
+    },
+    "uses skeleton": {
+        "prefix": "uses",
+        "body": [
+            "uses $0;",
+        ],
+        "description": "uses skeleton into the current file"
+    },
+    "description skeleton": {
+        "prefix": "description",
+        "body": [
+            "description \"$0\";",
+        ],
+        "description": "description skeleton into the current file"
+    },
 }
