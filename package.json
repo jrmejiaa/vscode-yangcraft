@@ -15,12 +15,12 @@
       "id": "yang",
       "aliases": ["yang", "yang"],
       "extensions": ["yang"],
-      "configuration": "./language-configuration.json"
+      "configuration": "./yang-configuration.jsonc"
     }],
     "grammars": [{
       "language": "yang",
       "scopeName": "source.yang",
-      "path": "./syntaxes/yang.tmLanguage.yaml"
+      "path": "./syntaxes/yang.tmLanguage.json"
     }],
     "snippets": [
       {
