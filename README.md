@@ -25,7 +25,8 @@ The following snippets are available once the extension is enabled:
 | presence                       | `presence`          |
 | config                         | `config`            |
 | uses                           | `uses`              |
-| description`                   | `description`       |
+| description                    | `description`       |
+| when                           | `when`              |
 
 ### Syntax Highlight
 

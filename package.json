@@ -1,6 +1,6 @@
 {
   "name": "vscode-yangcraft",
-  "displayName": "vscode-yangcraft",
+  "displayName": "YANGCraft - syntax highlighter and snippets",
   "description": "Yet Another Extension to work with YANG",
   "version": "0.0.1",
   "author": {
