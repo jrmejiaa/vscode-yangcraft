@@ -29,7 +29,7 @@
           "name": "meta.function.definition.yang"
         }
       },
-      "match": "((?<=[^\\w-]|^))(module)((?=[^\\w-]|$))"
+      "match": "((?<=[^\\w-]|^))(module|container|grouping)((?=[^\\w-]|$))"
     },
     {
       "captures": {
@@ -37,7 +37,7 @@
           "name": "keyword.control.yang"
         }
       },
-      "match": "((?<=[^\\w-]|^))(augment|case|choice|container|enum|feature|grouping|identity|import|include|leaf|leaf-list|module|submodule|type|typedef)((?=[^\\w-]|$))"
+      "match": "((?<=[^\\w-]|^))(augment|case|choice|enum|feature|identity|import|include|leaf|leaf-list|module|submodule|type|typedef)((?=[^\\w-]|$))"
     },
     {
       "captures": {
@@ -115,7 +115,7 @@
           "name": "constant.numeric.source.yang"
         }
       },
-      "match": "(?<!-)(\\b|(?<!-)\\.)(\\d+)(\\b|(?!-)\\.)(?!-)"
+      "match": "(\\b|(?<!-)\\.)(\\d+)(\\b|(?!-)\\.)"
     },
     {
       "captures": {
