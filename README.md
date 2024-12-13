@@ -39,9 +39,33 @@ The YANG modeling looks like this with the extension
 
 This extension does not have any third-party dependency. It should work out-of-the box if you have a up-to-date VS Code.
 
-## Known Issues
+## TROUBLESHOOTING
 
-TBD
+> Why I don't see a highlight in some of the keywords like in the photo? Like module or grouping?
+
+It is possible that your VS Code theme does not have a color by default for the TextMate grammar `meta.function.definition`. You could added and use the color that you prefer. This example is for the Dark+ default theme of VS Code, you should edit this in you User settings 
+
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and search for *Open User settings (JSON)* 
+
+See [Editor Semantic Highlighting](https://code.visualstudio.com/docs/getstarted/themes#_editor-semantic-highlighting) for more details
+
+```json
+"editor.tokenColorCustomizations": {
+    "[Default Dark+]": {
+        "textMateRules": [
+            {
+                "scope": "meta.function.definition.yang",
+                "settings": {
+                    "fontStyle": "italic",
+                    "foreground": "#C586C0"
+                }
+            },
+        ]
+    }
+}
+```
+
+If this is not the case, I may forgot to add a keyword, so let me know in the issues section of the repository.
 
 ## Acknowledgement 
 
