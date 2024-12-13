@@ -99,7 +99,7 @@
         "prefix": "when-container",
         "body": [
             "container $1 {",
-            "\twhen '$2 = boolean($3)' {",
+            "\twhen '${2:true()} = boolean($3)' {",
             "\t\tdescription",
             "\t\t\t\"$4\";",
             "\t}",
@@ -183,5 +183,15 @@
             "description \"$0\";",
         ],
         "description": "description skeleton into the current file"
+    },
+    "when skeleton": {
+        "prefix": "when",
+        "body": [
+            "when '${1:true()} = boolean($2)' {",
+            "\tdescription",
+            "\t\t\"$0\";",
+            "}",
+        ],
+        "description": "when skeleton into the current file"
     },
 }
