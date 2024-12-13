@@ -40,7 +40,7 @@ The YANG modeling looks like this with the extension
 
 This extension does not have any third-party dependency. It should work out-of-the box if you have a up-to-date VS Code.
 
-## TROUBLESHOOTING
+## Troubleshooting
 
 > Why I don't see a highlight in some of the keywords like in the photo? Like module or grouping?
 
