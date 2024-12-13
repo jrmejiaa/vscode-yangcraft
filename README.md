@@ -29,7 +29,7 @@ The following snippets are available once the extension is enabled:
 
 ### Syntax Highlight
 
-Due to the fact that there is no YANG LSP available, I based on the work of [`marko2276`](https://github.com/marko2276) to create the syntax using TextMate, I tried my best to separate the different sections of YANG into meaningful descriptions. The YANG modeling looks like this with the extension
+The YANG modeling looks like this with the extension
 
 ![YANG module section](assets/syntax_highlight_1.png)
 
