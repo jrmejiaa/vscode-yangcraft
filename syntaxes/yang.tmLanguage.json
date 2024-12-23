@@ -45,7 +45,15 @@
           "name": "keyword.source.yang"
         }
       },
-      "match": "((?<=[^\\w-]|^))(anyxml|argument|base|belongs-to|bit|config|contact|default|description|error-app-tag|error-message|extension|deviation|deviate|fraction-digits|if-feature|input|key|length|list|mandatory|max-elements|min-elements|must|namespace|ordered-by|organization|output|path|pattern|position|prefix|presence|range|reference|refine|require-instance|revision|revision-date|status|unique|units|uses|value|when|yang-version|yin-element)((?=[^\\w-]|$))"
+      "match": "^((?:[[:blank:]]*|[^a-zA-Z0-9]))(key)((?=[^\\w-]|$))"
+    },
+    {
+      "captures": {
+        "2": {
+          "name": "keyword.source.yang"
+        }
+      },
+      "match": "((?<=[^\\w-]|^))(anyxml|argument|base|belongs-to|bit|config|contact|default|description|error-app-tag|error-message|extension|deviation|deviate|fraction-digits|if-feature|input|length|list|mandatory|max-elements|min-elements|must|namespace|ordered-by|organization|output|path|pattern|position|prefix|presence|range|reference|refine|require-instance|revision|revision-date|status|unique|units|uses|value|when|yang-version|yin-element)((?=[^\\w-]|$))"
     },
     {
       "captures": {
