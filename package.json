@@ -1,8 +1,8 @@
 {
-  "name": "vscode-yangcraft",
+  "name": "yangcraft",
   "displayName": "YANGCraft - syntax highlighter and snippets",
   "description": "Yet Another Extension to work with YANG",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": {
     "name": "Jairo R. Mejia Aponte",
     "email": "jairo.mejia.2708@gmail.com"
@@ -12,7 +12,7 @@
   ],
   "license": "MIT",
   "publisher": "jrmejiaa",
-  "icon": "",
+  "icon": "assets/yangcraft-icon.png",
   "bugs": {
     "url": "https://github.com/jrmejiaa/vscode-yangcraft/issues"
   },

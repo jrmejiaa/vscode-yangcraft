@@ -1,5 +1,17 @@
 # YANGCraft - syntax highlighter and snippets  
 
+**Table of Contents**
+
+- [Description](#description)
+- [Features](#features)
+  - [Snippets](#snippets)
+  - [Syntax Highlight](#syntax-highlight)
+- [Requirements](#requirements)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [Acknowledgement](#acknowledgement)
+
+## Description
+
 Yet Another Extension for VS Code to work with YANG. This extension is a syntax highlighter for YANG data modeling files. Besides that, it also uses some useful snippets when writing YANG models.
 
 ## Features
@@ -26,7 +38,10 @@ The following snippets are available once the extension is enabled:
 | config                         | `config`            |
 | uses                           | `uses`              |
 | description                    | `description`       |
+| reference                      | `reference`         |
 | when                           | `when`              |
+| choice                         | `choice`            |
+| case                           | `case`              |
 
 ### Syntax Highlight
 
@@ -40,7 +55,7 @@ The YANG modeling looks like this with the extension
 
 This extension does not have any third-party dependency. It should work out-of-the box if you have a up-to-date VS Code.
 
-## Troubleshooting
+## Frequently Asked Questions
 
 > Why I don't see a highlight in some of the keywords like in the photo? Like module or grouping?
 
@@ -67,6 +82,10 @@ See [Editor Semantic Highlighting](https://code.visualstudio.com/docs/getstarted
 ```
 
 If this is not the case, I may forgot to add a keyword, so let me know in the issues section of the repository.
+
+> Why my setup does not look like the photos with those colors?
+
+The extension does not change the colors of your theme. This is just a syntax highlighter extension. If you want to have the same colors as in the photos, you should use the awesome Color theme [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night). I added some changes my self, as mentioned in the first question.
 
 ## Acknowledgement 
 
