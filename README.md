@@ -1,4 +1,4 @@
-# YANGCraft - syntax highlighter and snippets  
+# YANGCraft - syntax highlighter and snippets
 
 **Table of Contents**
 
@@ -18,7 +18,7 @@ Yet Another Extension for VS Code to work with YANG. This extension is a syntax 
 
 ### Snippets
 
-The following snippets are available once the extension is enabled: 
+The following snippets are available once the extension is enabled:
 
 | **Snippet Name**               | **Call Name**       |
 |--------------------------------|---------------------|
@@ -59,9 +59,9 @@ This extension does not have any third-party dependency. It should work out-of-t
 
 > Why I don't see a highlight in some of the keywords like in the photo? Like module or grouping?
 
-It is possible that your VS Code theme does not have a color by default for the TextMate grammar `meta.function.definition`. You could added and use the color that you prefer. This example is for the Dark+ default theme of VS Code, you should edit this in you User settings 
+It is possible that your VS Code theme does not have a color by default for the TextMate grammar `meta.function.definition`. You could added and use the color that you prefer. This example is for the Dark+ default theme of VS Code, you should edit this in you User settings
 
-<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and search for *Open User settings (JSON)* 
+<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>P</kbd> and search for *Open User settings (JSON)*
 
 See [Editor Semantic Highlighting](https://code.visualstudio.com/docs/getstarted/themes#_editor-semantic-highlighting) for more details
 
@@ -87,6 +87,6 @@ If this is not the case, I may forgot to add a keyword, so let me know in the is
 
 The extension does not change the colors of your theme. This is just a syntax highlighter extension. If you want to have the same colors as in the photos, you should use the awesome Color theme [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night). I added some changes my self, as mentioned in the first question.
 
-## Acknowledgement 
+## Acknowledgement
 
-- I was upon the work of [`marko2276`](https://github.com/marko2276) and their VS Code extension to create this one. Many thanks! 
+- I was upon the work of [`marko2276`](https://github.com/marko2276) and their VS Code extension to create this one. Many thanks!
