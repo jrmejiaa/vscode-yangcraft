@@ -184,6 +184,13 @@
         ],
         "description": "description skeleton into the current file"
     },
+    "reference skeleton": {
+        "prefix": "reference",
+        "body": [
+            "reference \"$0\";",
+        ],
+        "description": "reference skeleton into the current file"
+    },
     "when skeleton": {
         "prefix": "when",
         "body": [
@@ -193,5 +200,25 @@
             "}",
         ],
         "description": "when skeleton into the current file"
+    },
+    "choice skeleton": {
+        "prefix": "choice",
+        "body": [
+            "choice ${1:name-choice}' {",
+            "\tdescription: \"$2\";",
+            "\t$0",
+            "}",
+        ],
+        "description": "choice skeleton into the current file"
+    },
+    "case skeleton": {
+        "prefix": "case",
+        "body": [
+            "case ${1:name-case}' {",
+            "\t$0",
+            "\tdescription: \"$2\";",
+            "}",
+        ],
+        "description": "case skeleton into the current file"
     },
 }
